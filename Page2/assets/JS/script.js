@@ -52,4 +52,40 @@ $(document).ready(function () {
     }
     activeitem.classList.add("active2");
   }
+
+  //quantity
+  var valueCount;
+  document.querySelector(".minus-btn").setAttribute("disabled", "disabled");
+  document.querySelector(".plus-btn").addEventListener("click", function () {
+    valueCount = document.getElementById("quantity").value;
+    valueCount++;
+    document.getElementById("quantity").value = valueCount;
+    if (valueCount > 0) {
+      document.querySelector(".minus-btn").removeAttribute("disabled");
+      document.querySelector(".minus-btn").classList.remove("disabled");
+    }
+  });
+  document.querySelector(".minus-btn").addEventListener("click", function () {
+    valueCount = document.getElementById("quantity").value;
+    valueCount--;
+    document.getElementById("quantity").value = valueCount;
+    if (valueCount == 0) {
+      document.querySelector(".minus-btn").setAttribute("disabled", "disabled");
+    }
+  });
+  //image deyisme
+  let images = Array.from(document.querySelectorAll(".images .little .img"));
+  images.forEach((img) => {
+    img.onclick = function () {
+      var src = img.getAttribute("src");
+
+      document
+        .querySelector(".images .mainimage .mimg")
+        .setAttribute("src", src);
+      document.querySelector(".images .mainimage img").style.objectFit =
+        "contain";
+      //  .style.objetcFit =
+      //     "cover";
+    };
+  });
 });
