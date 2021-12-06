@@ -243,9 +243,12 @@ header .container .row .menu .menu-links ul li a {
   transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, -webkit-transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
-#entrance .desc {
+#entrance {
   background-color: #fafafaf1;
-  padding: 50px 110px;
+}
+
+#entrance .desc {
+  padding: 50px 0px;
 }
 
 #entrance .desc h3 {
