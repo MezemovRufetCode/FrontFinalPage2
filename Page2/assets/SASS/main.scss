@@ -248,7 +248,7 @@ header {
       }
     }
   }
-  .content {
+  .tab {
     .description {
       h4 {
         padding-top: 50px;
@@ -265,6 +265,7 @@ header {
       }
     }
     .additionalinfo {
+      display: none;
       p {
         font-size: 14px;
         span {
@@ -285,6 +286,7 @@ header {
       padding-bottom: 60px;
     }
     .rev {
+      display: none;
       padding-bottom: 100px;
       h4 {
         padding-top: 40px;
@@ -675,6 +677,32 @@ footer {
           padding: 10px;
           max-width: 49%;
           height: 50% !important;
+        }
+      }
+    }
+  }
+  #prdetails {
+    .categories {
+      ul {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 560px) {
+  .productGallery {
+    .buying {
+      .addtocart {
+        display: block !important;
+        .test {
+          display: block !important;
+          width: 100% !important;
+        }
+        .submit {
+          display: block !important;
+          width: 100% !important;
         }
       }
     }

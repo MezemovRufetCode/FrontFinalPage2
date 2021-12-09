@@ -313,14 +313,14 @@ header .container .row .menu .menu-links ul li a {
   transition: 0.3s;
 }
 
-#prdetails .content .description h4 {
+#prdetails .tab .description h4 {
   padding-top: 50px;
   font-family: "Playfair Display", serif;
   font-size: 30px;
   font-weight: 400;
 }
 
-#prdetails .content .description p {
+#prdetails .tab .description p {
   padding-top: 18px;
   font-family: "Lora", serif;
   color: #636363;
@@ -328,12 +328,13 @@ header .container .row .menu .menu-links ul li a {
   padding-bottom: 50px;
 }
 
-#prdetails .content .additionalinfo {
+#prdetails .tab .additionalinfo {
+  display: none;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-#prdetails .content .additionalinfo p {
+#prdetails .tab .additionalinfo p {
   font-size: 14px;
   margin-bottom: 0px !important;
   padding: 5px 0px;
@@ -341,68 +342,69 @@ header .container .row .menu .menu-links ul li a {
   font-weight: 500;
 }
 
-#prdetails .content .additionalinfo p span {
+#prdetails .tab .additionalinfo p span {
   font-weight: 400;
   color: #636363;
 }
 
-#prdetails .content .additionalinfo p:first-child span {
+#prdetails .tab .additionalinfo p:first-child span {
   margin-left: 37px;
 }
 
-#prdetails .content .rev {
+#prdetails .tab .rev {
+  display: none;
   padding-bottom: 100px;
 }
 
-#prdetails .content .rev h4 {
+#prdetails .tab .rev h4 {
   padding-top: 40px;
   font-family: "Lora", serif;
   font-weight: 400;
   font-size: 28px;
 }
 
-#prdetails .content .rev .workers {
+#prdetails .tab .rev .workers {
   padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#prdetails .content .rev .workers img {
+#prdetails .tab .rev .workers img {
   width: 80px;
   height: auto;
 }
 
-#prdetails .content .rev .workers .revcontent {
+#prdetails .tab .rev .workers .revcontent {
   padding-left: 20px;
 }
 
-#prdetails .content .rev .workers .revcontent .name {
+#prdetails .tab .rev .workers .revcontent .name {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
 }
 
-#prdetails .content .rev .workers .revcontent .name span {
+#prdetails .tab .rev .workers .revcontent .name span {
   margin-left: 10px;
   font-size: 12px;
   color: #959595;
 }
 
-#prdetails .content .rev .workers .revcontent .info {
+#prdetails .tab .rev .workers .revcontent .info {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #737373;
   padding-right: 20px;
 }
 
-#prdetails .content .rev .info {
+#prdetails .tab .rev .info {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #737373;
   padding-right: 20px;
 }
 
-#prdetails .content .rev form input:last-child {
+#prdetails .tab .rev form input:last-child {
   margin-top: 20px;
   padding: 10px 40px;
   background: #f34f3f;
@@ -799,6 +801,25 @@ footer .bottom-footer .socials a:hover {
     padding: 10px;
     max-width: 49%;
     height: 50% !important;
+  }
+  #prdetails .categories ul {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .productGallery .buying .addtocart {
+    display: block !important;
+  }
+  .productGallery .buying .addtocart .test {
+    display: block !important;
+    width: 100% !important;
+  }
+  .productGallery .buying .addtocart .submit {
+    display: block !important;
+    width: 100% !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

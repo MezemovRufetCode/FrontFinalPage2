@@ -29,7 +29,7 @@ $(document).ready(function () {
   //product Categoriyaya gore uygunlasdirma
 
   let category = document.querySelectorAll(".category");
-  let catContent = document.querySelectorAll(".content .all");
+  let catContent = document.querySelectorAll(".tab .all");
 
   for (let i = 0; i < category.length; i++) {
     category[i].addEventListener(
