@@ -539,7 +539,6 @@ header .container .row .menu .menu-links ul li a {
   font-weight: 400;
   font-family: "Lora", serif;
   color: #737373;
-  padding-right: 20px;
 }
 
 #productgallery .productGallery .buying .content .addtocart {
@@ -768,6 +767,10 @@ footer .bottom-footer .socials a:hover {
   #entrance .desc p {
     font-size: 17px;
   }
+  #productgallery .buying .content {
+    padding-left: 30px !important;
+    padding-right: 30px;
+  }
   #productgallery .images {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -819,6 +822,8 @@ footer .bottom-footer .socials a:hover {
   }
   .productGallery .buying .addtocart .submit {
     display: block !important;
+  }
+  .productGallery .buying .addtocart .submit input {
     width: 100% !important;
   }
 }

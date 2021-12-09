@@ -436,7 +436,6 @@ header {
           font-weight: 400;
           font-family: "Lora", serif;
           color: #737373;
-          padding-right: 20px;
         }
         .addtocart {
           padding-top: 40px;
@@ -662,6 +661,12 @@ footer {
     }
   }
   #productgallery {
+    .buying {
+      .content {
+        padding-left: 30px !important;
+        padding-right: 30px;
+      }
+    }
     .images {
       display: flex;
       align-items: center;
@@ -702,7 +707,9 @@ footer {
         }
         .submit {
           display: block !important;
-          width: 100% !important;
+          input {
+            width: 100% !important;
+          }
         }
       }
     }
