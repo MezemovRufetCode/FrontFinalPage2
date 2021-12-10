@@ -9,16 +9,14 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  height: 100vh;
-}
-
 header {
   background-color: #fff;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
   z-index: 10000;
+  -webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
 }
 
 header .container {
