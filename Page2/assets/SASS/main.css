@@ -267,6 +267,158 @@ header .container .row .menu .menu-links ul li a {
   line-height: 3;
 }
 
+header .secsubList1 {
+  min-width: 200px;
+  max-width: 300px;
+  overflow: hidden;
+  display: block;
+  background-color: white;
+  position: absolute;
+  top: 170px;
+  left: 200px;
+  padding-left: 0;
+  visibility: hidden;
+  height: 0% !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header #Portfolio1:hover .secsubList1 {
+  visibility: visible;
+  height: 200px !important;
+}
+
+header .secsubList2 {
+  min-width: 200px;
+  max-width: 300px;
+  overflow: hidden;
+  display: block;
+  background-color: white;
+  position: absolute;
+  top: 210px;
+  left: 200px;
+  padding-left: 0;
+  visibility: hidden;
+  height: 0% !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header #Portfolio2:hover .secsubList2 {
+  visibility: visible;
+  height: 200px !important;
+}
+
+header .secsubList3 {
+  padding: 10px 10px !important;
+  min-width: 200px;
+  max-width: 300px;
+  overflow: hidden;
+  display: block;
+  background-color: white;
+  position: absolute;
+  top: 130px;
+  left: 200px;
+  padding-left: 0;
+  visibility: hidden;
+  height: 0% !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header #Postypes1:hover .secsubList3 {
+  visibility: visible;
+  height: 220px !important;
+}
+
+header .secsubList4 {
+  padding: 10px 10px !important;
+  min-width: 200px;
+  max-width: 300px;
+  overflow: hidden;
+  display: block;
+  background-color: white;
+  position: absolute;
+  top: 50px;
+  right: 200px;
+  padding-left: 0;
+  visibility: hidden;
+  height: 0% !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header #element1:hover .secsubList4 {
+  visibility: visible;
+  height: 220px !important;
+}
+
+header .secsubList5 {
+  padding: 10px 10px !important;
+  min-width: 200px;
+  max-width: 300px;
+  overflow: hidden;
+  display: block;
+  background-color: white;
+  position: absolute;
+  top: 90px;
+  right: 200px;
+  padding-left: 0;
+  visibility: hidden;
+  height: 0% !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header #element2:hover .secsubList5 {
+  visibility: visible;
+  height: 220px !important;
+}
+
+header .secsubList6 {
+  padding: 10px 10px !important;
+  min-width: 200px;
+  max-width: 300px;
+  overflow: hidden;
+  display: block;
+  background-color: white;
+  position: absolute;
+  top: 130px;
+  right: 200px;
+  padding-left: 0;
+  visibility: hidden;
+  height: 0% !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header #element3:hover .secsubList6 {
+  visibility: visible;
+  height: 220px !important;
+}
+
+header .secsubList7 {
+  padding: 10px 10px !important;
+  min-width: 200px;
+  max-width: 300px;
+  overflow: hidden;
+  display: block;
+  background-color: white;
+  position: absolute;
+  top: 160px;
+  right: 200px;
+  padding-left: 0;
+  visibility: hidden;
+  height: 0% !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header #element4:hover .secsubList7 {
+  visibility: visible;
+  height: 220px !important;
+}
+
 .active {
   -webkit-transform: translateX(0%) !important;
           transform: translateX(0%) !important;
