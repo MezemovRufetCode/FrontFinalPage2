@@ -64,66 +64,115 @@ header .container .row .nav-links {
           align-items: center;
 }
 
-header .container .row .nav-links ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+header .container .row .nav-links .Menu ul {
+  list-style: none;
   margin: 0px;
-  padding: 0px;
+  padding: 0;
 }
 
-header .container .row .nav-links ul .navchvrnIcon {
+header .container .row .nav-links .Menu ul .navAnc {
+  color: black !important;
+}
+
+header .container .row .nav-links .Menu ul .navchvrnIcon {
   position: absolute;
   right: 25px;
   font-size: 8px;
 }
 
-header .container .row .nav-links ul .navAnc {
-  color: black !important;
+header .container .row .nav-links .Menu ul .navchvrnIconLft {
+  position: absolute;
+  left: 5px;
+  font-size: 8px;
 }
 
-header .container .row .nav-links ul li {
-  background: white;
-  position: relative;
-  line-height: 20px;
-  list-style: none;
+header .container .row .nav-links .Menu ul .menu-item-has-children:hover .sub-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+header .container .row .nav-links .Menu ul li {
   display: inline-block;
 }
 
-header .container .row .nav-links ul li a {
-  display: block;
+header .container .row .nav-links .Menu ul li .single-column-menu {
+  min-width: 200px;
+  max-width: 300px;
+}
+
+header .container .row .nav-links .Menu ul li a {
+  display: inline-block;
   text-decoration: none;
   color: #737373;
   font-family: "Encode Sans", sans-serif;
   letter-spacing: 2px;
   font-size: 75%;
   font-weight: 500;
-  padding: 0 25px;
+  padding: 0 22px;
   height: 100%;
   line-height: 40px;
 }
 
-header .container .row .nav-links ul li ul {
-  list-style: none;
-  padding: 0px;
-  display: none;
+header .container .row .nav-links .Menu ul li .sub-menu {
+  padding: 50px 20px 20px 0px;
   position: absolute;
+  z-index: 500;
+  background-color: white;
+  -webkit-box-shadow: -2px 0px 30px -25px rgba(0, 0, 0, 0.3);
+          box-shadow: -2px 0px 30px -25px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-header .container .row .nav-links ul li ul li {
-  line-height: 30px;
-  position: relative;
-  display: list-item;
-  width: 200px;
+header .container .row .nav-links .Menu ul li .sub-menu ul li {
+  line-height: 1;
+  margin: 0px;
+  display: block;
 }
 
-header .container .row .nav-links ul li ul li ul {
-  left: 200px;
+header .container .row .nav-links .Menu ul li .mega-menu {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
-header .container .row .nav-links ul li ul li ul li {
-  position: relative;
-  top: -50px;
+header .container .row .nav-links .Menu ul li .mega-menu-column-4 {
+  max-width: 1200px;
+  width: 100%;
+  left: 50%;
+  -webkit-transform: tran;
+          transform: tran;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 60px 15px 30px 15px;
+}
+
+header .container .row .nav-links .Menu ul li .mega-menu-column-4 .list-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  padding: 0px 15px;
+}
+
+header .container .row .nav-links .Menu ul li .mega-menu-column-4 .list-item ul li a {
+  padding-left: 0px !important;
+}
+
+header .container .row .nav-links .Menu ul li .mega-menu-column-4 .list-item .title {
+  font-size: 19px;
+  line-height: 1px;
+  padding: 10px 0;
+  font-family: "Playfair Display", serif;
+}
+
+header .container .row .nav-links .Menu ul li .mega-menu-column-4 ul li {
+  line-height: 1;
+  display: block;
 }
 
 header .container .row .littleservices {
@@ -682,8 +731,8 @@ footer .bottom-footer .socials a:hover {
   header .nav .container .row .littleservices .whishlist p i {
     margin-right: 15px;
   }
-  header .nav .container .row .nav-links ul li a {
-    padding: 0px 17px;
+  header .nav .container .row .nav-links .Menu ul li a {
+    padding: 0px 15px;
   }
 }
 

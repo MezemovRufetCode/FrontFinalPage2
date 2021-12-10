@@ -38,56 +38,101 @@ header {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        ul {
-          display: flex;
-          margin: 0px;
-          padding: 0px;
-          .navchvrnIcon {
-            position: absolute;
-            right: 25px;
-            font-size: 8px;
-          }
-          .navAnc {
-            color: black !important;
-          }
-          li {
-            background: white;
-            position: relative;
-            line-height: 20px;
+        .Menu {
+          ul {
             list-style: none;
-            display: inline-block;
-            // &:hover>ul{
-            //     display: block;
-            // }
-            a {
-              display: block;
-              text-decoration: none;
-              color: #737373;
-              font-family: "Encode Sans", sans-serif;
-              letter-spacing: 2px;
-              font-size: 75%;
-              font-weight: 500;
-              padding: 0 25px;
-              height: 100%;
-              line-height: 40px;
+            margin: 0px;
+            padding: 0;
+            .navAnc {
+              color: black !important;
             }
-            ul {
-              list-style: none;
-              padding: 0px;
-              display: none;
+            .navchvrnIcon {
               position: absolute;
-              // sub menyularin altdan baslamasi ucun,amma arada bosluq yarandigi ucun sub menular baglanir
-              // top: 60px;
-              li {
-                line-height: 30px;
-                position: relative;
-                display: list-item;
-                width: 200px;
+              right: 25px;
+              font-size: 8px;
+            }
+            .navchvrnIconLft {
+              position: absolute;
+              left: 5px;
+              font-size: 8px;
+            }
+            .menu-item-has-children {
+              &:hover {
+                .sub-menu {
+                  visibility: visible;
+                  opacity: 1;
+                }
+              }
+            }
+
+            li {
+              .single-column-menu {
+                min-width: 200px;
+                max-width: 300px;
+              }
+              display: inline-block;
+              a {
+                display: inline-block;
+                text-decoration: none;
+                color: #737373;
+                font-family: "Encode Sans", sans-serif;
+                letter-spacing: 2px;
+                font-size: 75%;
+                font-weight: 500;
+                padding: 0 22px;
+                height: 100%;
+                line-height: 40px;
+              }
+              .sub-menu {
+                padding: 50px 20px 20px 0px;
+                position: absolute;
+                z-index: 500;
+                background-color: white;
+                box-shadow: -2px 0px 30px -25px rgba(0, 0, 0, 0.3);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.5s ease;
                 ul {
-                  left: 200px;
                   li {
-                    position: relative;
-                    top: -50px;
+                    line-height: 1;
+                    margin: 0px;
+                    display: block;
+                  }
+                }
+              }
+              .mega-menu {
+                left: 50%;
+                transform: translateX(-50%);
+              }
+              .mega-menu-column-4 {
+                max-width: 1200px;
+                width: 100%;
+                left: 50%;
+                transform: tran;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 60px 15px 30px 15px;
+                .list-item {
+                  flex: 0 0 25%;
+                  padding: 0px 15px;
+                  ul {
+                    li {
+                      a {
+                        padding-left: 0px !important;
+                      }
+                    }
+                  }
+                  .title {
+                    font-size: 19px;
+                    line-height: 1px;
+                    padding: 10px 0;
+                    font-family: "Playfair Display", serif;
+                  }
+                }
+                ul {
+                  li {
+                    line-height: 1;
+                    display: block;
                   }
                 }
               }
@@ -122,7 +167,6 @@ header {
       .menuIcon {
         display: none;
       }
-
       .menu {
         display: none;
         transform: translateX(100%);
@@ -564,10 +608,12 @@ footer {
             }
           }
           .nav-links {
-            ul {
-              li {
-                a {
-                  padding: 0px 17px;
+            .Menu {
+              ul {
+                li {
+                  a {
+                    padding: 0px 15px;
+                  }
                 }
               }
             }
