@@ -7,6 +7,22 @@ html {
   scroll-behavior: smooth;
 }
 header {
+  a {
+    position: relative;
+  }
+  a:after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: 10px;
+    transition: 0.3s;
+  }
+  a:hover:after {
+    width: 100%;
+  }
   background-color: #fff;
   position: sticky;
   top: 0px;
@@ -677,6 +693,22 @@ header {
   }
 }
 footer {
+  a {
+    position: relative;
+  }
+  a:after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s;
+  }
+  a:hover:after {
+    width: 100%;
+  }
   padding-top: 90px;
   padding-bottom: 20px;
   background-color: #fefaf3;

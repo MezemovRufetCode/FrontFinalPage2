@@ -19,6 +19,26 @@ header {
           box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
 }
 
+header a {
+  position: relative;
+}
+
+header a:after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 1px;
+  width: 0;
+  left: 0;
+  bottom: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header a:hover:after {
+  width: 100%;
+}
+
 header .container {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -799,6 +819,26 @@ footer {
   padding-top: 90px;
   padding-bottom: 20px;
   background-color: #fefaf3;
+}
+
+footer a {
+  position: relative;
+}
+
+footer a:after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 1px;
+  width: 0;
+  left: 0;
+  bottom: -2px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer a:hover:after {
+  width: 100%;
 }
 
 footer h5 {
